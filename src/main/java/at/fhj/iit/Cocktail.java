@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cocktail extends Drink {
-    List<Liquid> liquids = new ArrayList<>();
+    private List<Liquid> liquids = new ArrayList<>();
     /**
      * Creates a Drink object with given name, e.g. juice or orange juice
      *
@@ -16,6 +16,10 @@ public class Cocktail extends Drink {
 
     public void addLiquid(Liquid liquid){
         liquids.add(liquid);
+    }
+
+    public String getName(){
+        return super.name;
     }
 
     @Override
@@ -47,6 +51,14 @@ public class Cocktail extends Drink {
             }
         }
         return false;
+    }
+
+    public String[] getLiquids(){
+        String[] liquidsStr = new String[liquids.size()];
+        for(int i = 0; i< liquids.size();i++){
+            liquidsStr[i]= liquids.get(i).getName();
+        }
+        return liquidsStr;
     }
 
 
