@@ -13,6 +13,7 @@ Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan
 # Andrea Heßler: Add Tea.java with first implementation
 - Black Tea with Rum is a special SimpleDrink
 - add Drink t = new Tea to Main.java
+- solve the merge conflict
 # David Akdogan: Add Coffee.java with first implementation
 
 
