@@ -11,6 +11,7 @@ public class Main {
         System.out.println(l.getVolume());
 
         Drink d = new SimpleDrink("Rotwein",l);
+        System.out.println(d);
 //-------------Cocktail Implementation----------------------------------------------------------
         Liquid dryGin = new Liquid("Dry Gin",0.060, 40);
         Liquid vermouth = new Liquid("Vermouth",0.010,16);
@@ -25,8 +26,6 @@ public class Main {
         System.out.printf("Volume of %s: %.2f%n",martini.getName(),martini.getVolume());
 //------------------------------------------------------------------------------------------------
 
-        System.out.println(d);
-
         Liquid lt = new Liquid("Rum", 0.125, 43);
         System.out.println(lt.getName());
         System.out.println(lt.getVolume());
@@ -35,5 +34,14 @@ public class Main {
         System.out.println(t);
 
 //------------------------------------------------------------------------------------------------
+
+        System.out.println();
+        Liquid whiskey = new Liquid("Whiskey", 0.03, 40);
+        Coffee coffee = new Coffee("Irish Coffee", whiskey);
+        System.out.println("------COFFEE------");
+        System.out.println(coffee.getAlcoholPercent());
+        System.out.println(coffee.getVolume());
+        System.out.println(coffee.isAlcoholic());
+
     }
 }
