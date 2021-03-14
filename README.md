@@ -14,6 +14,12 @@ Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan
 - Black Tea with Rum is a special SimpleDrink
 - add Drink t = new Tea to Main.java
 - solve the merge conflict
+
 # David Akdogan: Add Coffee.java with first implementation
+- Irish Coffee with Whiskey
+- Volume
+- Alcohol percent
+- isAlcoholic
+- add Liquid: Whiskey
 
 
