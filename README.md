@@ -33,7 +33,7 @@ Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan
   - Lukas Becker: Added class "Cocktail" to project and added first methods to it. 
   
 - 14.03.2021
-  -Andrea Heßler: Added Tea-Class to project and implemented it in main
-  -Lukas Becker: Finished Cocktail Class: added new method getLiquids, implemented Class in Main Class
-  -Lukas Becker: Added method description to readme
-  -David Akdogan: Added Coffee-Class and implemented it in Main Class
+  - Andrea Heßler: Added Tea-Class to project and implemented it in main
+  - Lukas Becker: Finished Cocktail Class: added new method getLiquids, implemented Class in Main Class
+  - Lukas Becker: Added method description to readme
+  - David Akdogan: Added Coffee-Class and implemented it in Main Class
