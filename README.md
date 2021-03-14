@@ -22,4 +22,18 @@ Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan
 - isAlcoholic
 - add Liquid: Whiskey
 
+# Commit History
 
+- 11.03.2021: 
+  - Lukas Becker: Created Repository and added Drinks Project from elearning Platform
+  - Andrea Heßler: Added her class description to readme
+  - Lukas Becker: formatted readme
+  - David Akdogan: Added his class description to readme
+  - Lukas Becker: Added his class description to readme and reformatted readme
+  - Lukas Becker: Added class "Cocktail" to project and added first methods to it. 
+  
+- 14.03.2021
+  -Andrea Heßler: Added Tea-Class to project and implemented it in main
+  -Lukas Becker: Finished Cocktail Class: added new method getLiquids, implemented Class in Main Class
+  -Lukas Becker: Added method description to readme
+  -David Akdogan: Added Coffee-Class and implemented it in Main Class
