@@ -1,3 +1,13 @@
+
+/*
+ * Cocktail
+ * Cocktail consisting of multiple Liquids
+ * Extension: Abstraction class Drink
+ * Author: Lukas Becker
+ * Last Change: 14/03/2021, 18:40
+ *
+ */
+
 package at.fhj.iit;
 
 import java.util.ArrayList;
