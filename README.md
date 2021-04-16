@@ -1,8 +1,10 @@
 # Software Configuration Management #
 Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan
-
-## Drinks Sample ##
-# Becker Lukas: Add Cocktail.java with first implementation 
+## Testing/Exercise 2 ## 
+15.3.:Lukas Becker: Repo Cleanup, folder structure, created branch
+16.3.:David Akdogan: created branch
+## Drinks Sample/Excercise 1 ##
+### Becker Lukas: Add Cocktail.java with first implementation 
 - A Drink consisting of various Liquids
 - getVolume: Adds volumes of each Liquid together
 - getAlcoholPercent: Average of alcohol percent from each drink
@@ -10,20 +12,20 @@ Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan
 - addLiquid: Adds a Liquid
 - getLiquids: returns a String array of all liquids of the cocktail
 
-# Andrea Heßler: Add Tea.java with first implementation
+### Andrea Heßler: Add Tea.java with first implementation
 - Black Tea with Rum is a special SimpleDrink
 - add Drink t = new Tea to Main.java
 - solve the merge conflict
 - design a little better view for the output
 
-# David Akdogan: Add Coffee.java with first implementation
+### David Akdogan: Add Coffee.java with first implementation
 - Irish Coffee with Whiskey
 - Volume
 - Alcohol percent
 - isAlcoholic
 - add Liquid: Whiskey
 
-# Commit History
+### Commit History
 
 - 11.03.2021: 
   - Lukas Becker: Created Repository and added Drinks Project from elearning Platform
