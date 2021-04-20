@@ -1,8 +1,8 @@
 # Software Configuration Management #
 Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan
 ## Testing/Exercise 2 ## 
-15.3.:Lukas Becker: Repo Cleanup, folder structure, created branch
-16.3.:David Akdogan: created branch
+15.3.:Lukas Becker: Repo Cleanup, folder structure, created branch <br />
+16.3.:David Akdogan: created branch <br />
 ## Drinks Sample/Excercise 1 ##
 ### Becker Lukas: Add Cocktail.java with first implementation 
 - A Drink consisting of various Liquids
