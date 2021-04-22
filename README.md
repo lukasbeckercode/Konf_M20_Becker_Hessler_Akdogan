@@ -3,6 +3,8 @@ Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan
 ## Testing/Exercise 2 ## 
 15.3.: Lukas Becker: Repo Cleanup, folder structure, created branch <br />
 16.3.: David Akdogan: created branch <br />
+22.4.: Lukas Becker: added tests for Cocktail and Liquids Class <br />
+22.4.: Andrea Heßler: 
 ## Drinks Sample/Exercise 1 ##
 ### Becker Lukas: Add Cocktail.java with first implementation 
 - A Drink consisting of various Liquids
