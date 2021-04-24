@@ -4,7 +4,7 @@ package at.fhj.iit;
  * Abstract base class for concrete drink classes
  */
 public abstract class Drink {
-
+    Drink(){}
     /**
      * name of the drink, so it's easier to identify drink
      */
