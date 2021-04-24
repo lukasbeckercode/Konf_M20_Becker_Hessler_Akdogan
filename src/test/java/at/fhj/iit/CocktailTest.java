@@ -13,10 +13,6 @@ class CocktailTest {
     Liquid whiskey;
 
     @BeforeEach
-    void setup(){
-        cocktail = new Cocktail("test");
-    }
-    @BeforeEach
     void beforeEach() {
         cocktail = new Cocktail("test");
         vodka = new Liquid("Vodka", 0.03, 40);
@@ -51,19 +47,10 @@ class CocktailTest {
 
     @Test
     void isAlcoholic() {
-    }
-
-    @Test
-    void getLiquids() {
-
         cocktail.addLiquid(cola);
         assertFalse(cocktail.isAlcoholic());
         cocktail.addLiquid(whiskey);
         assertTrue(cocktail.isAlcoholic());
     }
 
-    // @Test
-    // void getLiquids() {
-    //     fail("Implement me");
-    // }
 }
