@@ -24,5 +24,4 @@ public class Coffee extends Drink {
         return l.getAlcoholPercent() > 0;
     }
 
-
 }
