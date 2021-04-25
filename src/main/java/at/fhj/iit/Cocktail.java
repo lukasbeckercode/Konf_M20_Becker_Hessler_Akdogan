@@ -10,7 +10,7 @@ import java.util.List;
  * last change: 24.04.2021
  */
 public class Cocktail extends Drink {
-    private List<Liquid> liquids = new ArrayList<>();
+    private final List<Liquid> liquids = new ArrayList<>();
     /**
      * Creates a Drink object with given name, e.g. juice or orange juice
      *
