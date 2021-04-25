@@ -4,9 +4,11 @@ Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan
 - 15.3.: Lukas Becker: Repo Cleanup, folder structure, created branch 
 - 16.3.: David Akdogan: created branch 
 - 22.4.: Lukas Becker: added tests for Cocktail and Liquids Class 
-- 22.4.: Andrea Heßler: 
+- 24.4.: Andrea Heßler: added Map-teaList in Tea.java and tests for Tea in TeaTest.java
 - 24.4.: Lukas Becker: Added JavaDoc Comments and DisplayNames
 - 24.4.: All: Merged branches to main
+- 25.4.: Andrea Heßler: added more tests for Tea and all test for SimpleDrink
+- we don't test the main
 ## Drinks Sample/Exercise 1 ##
 ### Becker Lukas: Add Cocktail.java with first implementation 
 - A Drink consisting of various Liquids
