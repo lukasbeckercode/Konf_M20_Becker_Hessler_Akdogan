@@ -1,4 +1,4 @@
-# Software Configuration Management #
+Software Configuration Management #
 Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan
 ## Testing/Exercise 2 ## 
 - 15.3.: Lukas Becker: Repo Cleanup, folder structure, created branch 
@@ -9,6 +9,14 @@ Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan
 - 24.4.: All: Merged branches to main
 - 25.4.: Andrea Heßler: added more tests for Tea and all test for SimpleDrink
 - we don't test the main
+=======
+## Test Coverage 
+| Class | Coverage |
+---| ---|
+| Cocktail | 100% |
+| Coffee | 100% |
+| Tea | 100% 
+
 ## Drinks Sample/Exercise 1 ##
 ### Becker Lukas: Add Cocktail.java with first implementation 
 - A Drink consisting of various Liquids
