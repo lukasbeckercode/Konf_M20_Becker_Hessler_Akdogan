@@ -3,13 +3,14 @@ package at.fhj.iit;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 /**
  * TeaTest
  * testing my own tea class
  * @author Andrea Hessler
  * Last Change: 24.04.21, 18:51
- *
  **/
+
 public class TeaTest {
     private Tea tea = new Tea();
     Liquid lt = new Liquid("Rum", 0.125, 43);
