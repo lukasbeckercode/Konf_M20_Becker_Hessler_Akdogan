@@ -7,6 +7,12 @@ Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan
 - 22.4.: Andrea Heßler: 
 - 24.4.: Lukas Becker: Added JavaDoc Comments and DisplayNames
 - 24.4.: All: Merged branches to main
+## Test Coverage 
+| Class | Coverage |
+---| ---|
+| Cocktail | 100% |
+| Coffee | 100% |
+| Tea | 100% 
 ## Drinks Sample/Exercise 1 ##
 ### Becker Lukas: Add Cocktail.java with first implementation 
 - A Drink consisting of various Liquids
