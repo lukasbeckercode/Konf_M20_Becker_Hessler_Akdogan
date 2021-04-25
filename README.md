@@ -9,7 +9,6 @@ Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan
 - 24.4.: All: Merged branches to main
 - 25.4.: Andrea Heßler: added more tests for Tea and all test for SimpleDrink
 - we don't test the main
-=======
 ## Test Coverage 
 | Class | Coverage |
 ---| ---|
@@ -17,6 +16,7 @@ Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan
 | Coffee | 100% |
 | Tea | 100% 
 
+![Test Coverage of Project](Coverage.png) 
 ## Drinks Sample/Exercise 1 ##
 ### Becker Lukas: Add Cocktail.java with first implementation 
 - A Drink consisting of various Liquids
