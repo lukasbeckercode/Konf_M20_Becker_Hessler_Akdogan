@@ -1,0 +1,20 @@
+Die JavaDoc API stellt ein nützliches Tool zum Dokumentieren von JavaCode bereit. 
+JavaDoc Kommentare sind Blockkommentare die durch einen zweiten Stern von "normalen" Blockkommentaren abgegrenzt werden. 
+
+z.B.: 
+/**
+* I am a JavaDoc comment
+*/ 
+
+JavaDoc verwendet Tags um wichtige Eigenschaften einer Klasse zu beschreiben: 
+@author <autorname> : Der autor einer Klasse
+@param <parametername> <parameterbeschreibung> : Beschreibt einen Parameter einer Methode 
+@return <returnbeschreibung> : beschreibt, was von einer Methode zurückgegeben wird
+@see <Klassenname>: Verweis auf eine andere Klasse (z.B.: verweis auf die Superklasse einer Subklasse) 
+
+JavaDoc Kommentare werden direkt über die zu beschreibende Klasse/Methode geschrieben 
+
+Vorteile der JavaDoc API: 
+
+In den meisten IDEs wird beim Instanzieren einer Klasse oder beim Aufrufen einer Methode der Text und die beschrieben Parameter/Reutrns angezeigt
+IntelliJ (und wahrscheinlich auch andere IDEs) können aus sauber und konsequent benutzten JavaDoc Kommentare Doku-Pages erstellen, die ohne große Veränderungen veröffentlicht werden können. 
