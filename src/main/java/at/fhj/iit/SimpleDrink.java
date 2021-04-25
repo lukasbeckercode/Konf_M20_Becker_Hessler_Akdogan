@@ -1,15 +1,12 @@
 package at.fhj.iit;
-
 /**
  * represents a simple drink liquid which can be used in drinks
  */
 public class SimpleDrink extends Drink{
-
     /**
      * uses only one liquid
      */
     protected Liquid l;
-
     /**
      * Creates a SimpleDrink object with given name and liquid
      *
@@ -20,7 +17,6 @@ public class SimpleDrink extends Drink{
         super(name);
         this.l = l;
     }
-
     /**
      * Returns volume of liquid l
      *
@@ -30,7 +26,6 @@ public class SimpleDrink extends Drink{
     public double getVolume() {
         return l.getVolume();
     }
-
     /**
      * Returns alcohol volume percent of liquid l
      *
@@ -40,7 +35,6 @@ public class SimpleDrink extends Drink{
     public double getAlcoholPercent() {
         return l.getAlcoholPercent();
     }
-
     /**
      * Gives information if drink is alcoholic or not
      *
@@ -53,7 +47,6 @@ public class SimpleDrink extends Drink{
         }
         return false;
     }
-
     public String toString(){
         return "Simple Drink called " + name + " with " + l.getAlcoholPercent() + " percent alcohol by volume";
     }

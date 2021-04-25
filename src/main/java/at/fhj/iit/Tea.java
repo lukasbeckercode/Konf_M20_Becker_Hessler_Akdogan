@@ -1,5 +1,4 @@
 package at.fhj.iit;
-
 import java.util.Collection;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -7,15 +6,13 @@ import java.util.concurrent.ConcurrentHashMap;
  * Tea is a special SimpleDrink
  * Tea with Alcohol is possible (exp. Tea with Rum)
  * @author      Andrea Hessler
- * Last Change: 24.03.2021
- **/
+ * Last Change: 25.04.2021
+ */
 public class Tea extends Drink{
-    Tea(){}
     /**
      * uses only one liquid
      */
     protected Liquid l;
-
     /**
      * Creates a Tea object with given name and liquid
      *
@@ -26,7 +23,6 @@ public class Tea extends Drink{
         super(name);
         this.l = l;
     }
-
     /**
      * Returns volume of liquid l
      *
@@ -52,27 +48,19 @@ public class Tea extends Drink{
      *
      * @return true when alcoholic liquids are present, otherwise (OLD: false) --> NEW: throw Exception for Test
      */
-
     public boolean isAlcoholic() {
-        if(l.getAlcoholPercent() > 0){
-            return true;
-        } else {
-            throw new RuntimeException("It isn't an alcoholic tea.");
-        //    return false;
-        }
+        if(l.getAlcoholPercent() > 0) return true;
+        else throw new RuntimeException("It isn't an alcoholic tea.");
     }
-
     public String toString() {
         return "Tea called " + name + " with " + l.getAlcoholPercent() + " percent alcohol by volume";
     }
     /**
      * NEW: validate Input of Tea-Name
-     */
+     **/
     public void hasName(String name) {
         this.name = name;
-        if (this.name.isBlank()) {
-            throw new RuntimeException("There is no Input for the name of the tea.");
-        }
+        if (this.name.isBlank()) throw new RuntimeException("There is no Input for the name of the tea.");
     }
     /**
      * NEW: Map-List with alcoholic Teas
