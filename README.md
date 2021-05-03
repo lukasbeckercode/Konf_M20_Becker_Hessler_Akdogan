@@ -1,5 +1,9 @@
 # Software Configuration Management 
 Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan
+## Exercise 3
+|Date | Names |Changes|
+--- | --- | ---
+|03.05.|Lukas Becker & Andrea Heßler|corrected Folder structure, improved POM, added first markdown files| 
 ## Testing/Exercise 2 ## 
 - 15.3.: Lukas Becker: Repo Cleanup, folder structure, created branch 
 - 16.3.: David Akdogan: created branch 
