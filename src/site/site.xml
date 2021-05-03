@@ -3,5 +3,10 @@
         <menu name = "Test Markdown">
             <item name ="test" href ="test.html"/>
         </menu>
+        <menu name="Drinks">
+            <item name="Cocktail" href="Cocktail.html"/>
+            <item name="Tea" href="Tea.html"/>
+            <item name="Coffee" href = "Coffee.html" />
+        </menu>
     </body>
 </project>
