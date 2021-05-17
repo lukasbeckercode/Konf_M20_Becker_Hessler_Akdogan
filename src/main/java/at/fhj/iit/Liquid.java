@@ -3,6 +3,7 @@ package at.fhj.iit;
 /**
  * represents a liquid which can be used in drinks
  * TODO: add price field here
+ * TODO: check if liquid is hard or light
  */
 public class Liquid {
     /**
@@ -19,6 +20,7 @@ public class Liquid {
      */
     private double alcoholPercent;
 
+    private double price;
     /**
      * Creates new liquid with given name, volume and
      * alcoholPercent
@@ -33,6 +35,15 @@ public class Liquid {
 
         this.volume = volume;
         this.alcoholPercent = alcoholPercent;
+    }
+
+    public Liquid(String name, double volume, double alcoholPercent,double price) {
+        this.name = name;
+        checkVolume(volume);
+
+        this.volume = volume;
+        this.alcoholPercent = alcoholPercent;
+        this.price = price;
     }
 
     private void checkVolume(double volume) {
@@ -94,5 +105,9 @@ public class Liquid {
      */
     public void setAlcoholPercent(double alcoholPercent) {
         this.alcoholPercent = alcoholPercent;
+    }
+
+    public double getPrice() {
+        return price;
     }
 }

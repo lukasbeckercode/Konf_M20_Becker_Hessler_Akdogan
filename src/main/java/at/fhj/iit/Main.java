@@ -1,12 +1,14 @@
 
 package at.fhj.iit;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args){
-
+        List<Drink> allDrinks = new ArrayList<>();
         System.out.println("------ ROTWEIN ------");
         Liquid l = new Liquid("Wein", 0.125, 13);
         System.out.println("Alcohol: "+ l.getName());
@@ -14,17 +16,18 @@ public class Main {
 
         Drink d = new SimpleDrink("Rotwein",l);
         System.out.println(d+"\n");
+        //allDrinks.add(d);
 
 //-------------Cocktail Implementation----------------------------------------------------------
-        Liquid dryGin = new Liquid("Dry Gin",0.060, 40);
-        Liquid vermouth = new Liquid("Vermouth",0.010,16);
+        Liquid dryGin = new Liquid("Dry Gin",0.060, 40,6.50);
+        Liquid vermouth = new Liquid("Vermouth",0.010,16,8.70);
 
         Cocktail martini = new Cocktail("Martini");
         martini.addLiquid(dryGin);
         martini.addLiquid(vermouth);
 
         System.out.println("------ MARTINI ------");
-        System.out.println("Contents of Martini:"+ Arrays.toString(martini.getLiquids()));
+        System.out.println("Contents of Martini:"+ Arrays.toString(martini.getLiquidsString()));
         System.out.printf("%s is Alcoholic: %b%n",martini.getName(),martini.isAlcoholic());
         System.out.printf("Alcohol percentage of %s: %.2f%n",martini.getName(),martini.getAlcoholPercent());
         System.out.printf("Volume of %s: %.2f%n",martini.getName(),martini.getVolume());

@@ -10,7 +10,8 @@ import java.util.List;
  * last change: 24.04.2021
  */
 public class Cocktail extends Drink {
-    private final List<Liquid> liquids = new ArrayList<>();
+
+
     /**
      * Creates a Drink object with given name, e.g. juice or orange juice
      *
@@ -20,13 +21,6 @@ public class Cocktail extends Drink {
         super(name);
     }
 
-    /**
-     * adds a Liquid to the Cocktail
-     * @param liquid any alcoholic or non-alcoholic Liquid
-     */
-    public void addLiquid(Liquid liquid){
-        liquids.add(liquid);
-    }
 
     /**
      * @return the name of the cocktail
@@ -82,13 +76,14 @@ public class Cocktail extends Drink {
      * gets all the Liquids names
      * @return a String array containing all the Liquid names
      */
-    public String[] getLiquids(){
+    public String[] getLiquidsString(){
         String[] liquidsStr = new String[liquids.size()];
         for(int i = 0; i< liquids.size();i++){
             liquidsStr[i]= liquids.get(i).getName();
         }
         return liquidsStr;
     }
+
 
 
 }

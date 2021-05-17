@@ -1,6 +1,7 @@
 # Software Configuration Management 
 Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan
 ## Exercise 3
+Division of Labour
 |Date | Names |Changes|
 --- | --- | ---
 |03.05.|Lukas Becker & Andrea Heßler|corrected Folder structure, improved POM, added first markdown files| 

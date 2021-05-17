@@ -1,5 +1,8 @@
 package at.fhj.iit;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Abstract base class for concrete drink classes
  */
@@ -8,6 +11,9 @@ public abstract class Drink {
      * name of the drink, so it's easier to identify drink
      */
     protected String name;
+
+
+    protected final List<Liquid> liquids = new ArrayList<>();
 
     /**
      * Creates a Drink object with given name, e.g. juice or orange juice
@@ -19,6 +25,7 @@ public abstract class Drink {
     public Drink(String name) {
         this.name = name;
     }
+
 
     /**
      * Calculates and returns volume of drink
@@ -40,4 +47,16 @@ public abstract class Drink {
      * @return true when alcoholic liquids are present, otherwise false
      */
     public abstract boolean isAlcoholic();
+
+    /**
+     * adds a Liquid to the Cocktail
+     * @param liquid any alcoholic or non-alcoholic Liquid
+     */
+    public void addLiquid(Liquid liquid){
+        liquids.add(liquid);
+    }
+
+    public List<Liquid> getLiquids() {
+        return liquids;
+    }
 }

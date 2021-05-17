@@ -1,6 +1,17 @@
 package at.fhj.iit;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Registrierkasse implements RegisterInterface{
+
+    static List<SellingData> sellingDataList = new ArrayList<>();
+
+    public Registrierkasse(SellingData sellingData) {
+        sellingDataList.add(sellingData);
+
+    }
+
     @Override
     public double salesPerCapitaAndDay() {
         //TODO: calculate sales for one day made by one selling person

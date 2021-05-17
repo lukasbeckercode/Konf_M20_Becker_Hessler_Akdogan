@@ -38,7 +38,7 @@ class CocktailTest {
     @DisplayName("Liquid Adder and Getter Test")
     void addAndGetLiquid() {
         cocktail.addLiquid(whiskey);
-        assertEquals("Whiskey", cocktail.getLiquids()[0]);
+        assertEquals("Whiskey", cocktail.getLiquidsString()[0]);
     }
 
     /**
