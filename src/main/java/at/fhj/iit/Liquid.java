@@ -2,6 +2,7 @@ package at.fhj.iit;
 
 /**
  * represents a liquid which can be used in drinks
+ * TODO: add price field here
  */
 public class Liquid {
     /**
