@@ -2,9 +2,17 @@
 Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan
 ## Exercise 3
 Division of Labour
+|Lukas Becker | Andrea Heßler | David Akdogan|
+--- | --- | ---
+
 |Date | Names |Changes|
 --- | --- | ---
 |03.05.|Lukas Becker & Andrea Heßler|corrected Folder structure, improved POM, added first markdown files| 
+|17.05|Lukas Becker & Andrea Heßler|added basic structures for this exercise, drinks now have to consist of at least one Liquid!|
+
+- Registrierkasse.java: Calculates certain sales using the SellingData.java Class
+- SellingData.java: Datastructure saving the selling Day, Seller and Drink sold for each transaction
+- changes in Drink.java: ArrayList containing the Liquids a Drinks consists of, also added getter and setter methods for this, necessary for Registrierkasse.java functionality!
 ## Testing/Exercise 2 ## 
 - 15.3.: Lukas Becker: Repo Cleanup, folder structure, created branch 
 - 16.3.: David Akdogan: created branch 
