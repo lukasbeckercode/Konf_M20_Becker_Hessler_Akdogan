@@ -2,8 +2,6 @@ package at.fhj.iit;
 
 /**
  * represents a liquid which can be used in drinks
- * TODO: add price field here
- * TODO: check if liquid is hard or light
  */
 public class Liquid {
     /**
@@ -20,6 +18,9 @@ public class Liquid {
      */
     private double alcoholPercent;
 
+    /**
+     * price of a liquid as a double
+     */
     private double price;
     /**
      * Creates new liquid with given name, volume and

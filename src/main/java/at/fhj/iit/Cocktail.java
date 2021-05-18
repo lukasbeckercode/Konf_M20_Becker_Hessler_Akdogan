@@ -1,8 +1,5 @@
 package at.fhj.iit;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Cocktail consisting of multiple Liquids
  * @see Drink
@@ -10,7 +7,6 @@ import java.util.List;
  * last change: 24.04.2021
  */
 public class Cocktail extends Drink {
-
 
     /**
      * Creates a Drink object with given name, e.g. juice or orange juice
@@ -37,7 +33,7 @@ public class Cocktail extends Drink {
     public double getVolume() {
         //returns the average volume
         double sum = 0;
-        for(Liquid l:liquids){
+        for(Liquid l:getLiquids()){
             sum += l.getVolume();
         }
         return sum;
@@ -51,10 +47,10 @@ public class Cocktail extends Drink {
     public double getAlcoholPercent() {
         //returns average alcohol percent
         double sum = 0;
-        for(Liquid l: liquids){
+        for(Liquid l: getLiquids()){
            sum += l.getAlcoholPercent();
         }
-        return sum/ liquids.size();
+        return sum/ getLiquids().size();
     }
 
     /**
@@ -64,7 +60,7 @@ public class Cocktail extends Drink {
     @Override
     public boolean isAlcoholic() {
 
-        for(Liquid l: liquids){
+        for(Liquid l:getLiquids()){
             if(l.getAlcoholPercent()>0){
                 return true;
             }
@@ -77,9 +73,9 @@ public class Cocktail extends Drink {
      * @return a String array containing all the Liquid names
      */
     public String[] getLiquidsString(){
-        String[] liquidsStr = new String[liquids.size()];
-        for(int i = 0; i< liquids.size();i++){
-            liquidsStr[i]= liquids.get(i).getName();
+        String[] liquidsStr = new String[getLiquids().size()];
+        for(int i = 0; i< getLiquids().size();i++){
+            liquidsStr[i]= getLiquids().get(i).getName();
         }
         return liquidsStr;
     }

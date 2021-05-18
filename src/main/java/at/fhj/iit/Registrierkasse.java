@@ -3,6 +3,7 @@ package at.fhj.iit;
 import java.util.ArrayList;
 import java.util.List;
 
+//TODO: commenting and testing
 public class Registrierkasse implements RegisterInterface{
 
     static List<SellingData> sellingDataList = new ArrayList<>();

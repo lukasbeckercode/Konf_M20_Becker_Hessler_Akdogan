@@ -1,5 +1,5 @@
 package at.fhj.iit;
-
+//TODO: Comment and test, more implementation
 public class SellingData {
     private Drink drink;
     private Seller seller;

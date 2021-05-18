@@ -13,7 +13,7 @@ public abstract class Drink {
     protected String name;
 
 
-    protected final List<Liquid> liquids = new ArrayList<>();
+    private final List<Liquid> liquids = new ArrayList<>();
 
     /**
      * Creates a Drink object with given name, e.g. juice or orange juice
@@ -49,7 +49,7 @@ public abstract class Drink {
     public abstract boolean isAlcoholic();
 
     /**
-     * adds a Liquid to the Cocktail
+     * adds a Liquid to the Cocktail/Setter for Liquids
      * @param liquid any alcoholic or non-alcoholic Liquid
      */
     public void addLiquid(Liquid liquid){
@@ -59,4 +59,5 @@ public abstract class Drink {
     public List<Liquid> getLiquids() {
         return liquids;
     }
+
 }
