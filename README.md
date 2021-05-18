@@ -2,8 +2,12 @@
 Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan
 ## Exercise 3
 Division of Labour
+
 |Lukas Becker | Andrea Heßler | David Akdogan|
 --- | --- | ---
+|Tests,Selling Data|Implementation of "sales"-methods in Registrierkasse.java |Seller,SellingDay Implementation|
+
+->Bis Sonntag 18:30 fertig, dann mvn site sachen nacher machen! 
 
 |Date | Names |Changes|
 --- | --- | ---
