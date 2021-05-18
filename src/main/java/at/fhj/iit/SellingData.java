@@ -23,4 +23,16 @@ public class SellingData {
     public double getPrice() {
         return price;
     }
+
+    public Drink getDrink() {
+        return drink;
+    }
+
+    public Seller getSeller() {
+        return seller;
+    }
+
+    public SellingDay getSellingDay() {
+        return sellingDay;
+    }
 }
