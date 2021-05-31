@@ -14,6 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class LiquidTest {
     Liquid liquid;
+    Liquid liquidPriced;
 
     /**
      * Creates a new Liquid "Wine" for each test
@@ -21,6 +22,7 @@ class LiquidTest {
     @BeforeEach
     void beforeEach(){
         liquid = new Liquid("Wine",0.125,12);
+        liquidPriced = new Liquid("Beer",0.5,5,4.5);
     }
 
     /**
@@ -60,5 +62,12 @@ class LiquidTest {
     void setAlcoholPercent() {
         liquid.setAlcoholPercent(14);
         assertEquals(14,liquid.getAlcoholPercent());
+    }
+
+    @Test
+    @DisplayName("Price Getter Test")
+    void getPriceTest(){
+        assertEquals(4.5,liquidPriced.getPrice());
+        assertEquals(0.0,liquid.getPrice());
     }
 }
