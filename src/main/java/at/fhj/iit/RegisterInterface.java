@@ -4,6 +4,6 @@ public interface RegisterInterface {
     double salesPerCapitaAndDay();
     double salesPerCapita();
     double salesPerDay();
-    double salesPerDrink();
+    double[] salesPerDrink();
 
 }
