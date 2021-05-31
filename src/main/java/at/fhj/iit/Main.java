@@ -40,12 +40,30 @@ public class Main {
 //------------------------------------------------------------------------------------------------
 
         System.out.println("\n------ BLACK TEA WITH RUM ------");
-        Liquid lt = new Liquid("Rum", 0.125, 43);
-        System.out.println("Alcohol: "+ lt.getName());
-        System.out.println("Volume: " + lt.getVolume());
+        Liquid rum = new Liquid("rum", 0.125, 43, 2.10);
+        Liquid blackTea1 = new Liquid("hot water + black tea bag", 0.375, 0, 1.50);
 
-        Drink t = new Tea("Black Tea with Rum",lt);
-        System.out.println(t);
+        Tea teaRum = new Tea("Black Tea with Rum");
+        teaRum.addLiquid(rum);
+        teaRum.addLiquid(blackTea1);
+
+        System.out.println("Contents of Black Tea with Rum:"+ Arrays.toString(teaRum.getLiquidsString()));
+        System.out.printf("%s is Alcoholic: %b%n",teaRum.getName(),teaRum.isAlcoholic());
+        System.out.printf("Alcohol percentage of %s: %.2f%n",teaRum.getName(),teaRum.getAlcoholPercent());
+        System.out.printf("Volume of %s: %.2f%n",teaRum.getName(),teaRum.getVolume());
+
+//------------------------------------------------------------------------------------------------
+
+        System.out.println("\n------ SIMPLE BLACK TEA ------");
+        Liquid blackTea2 = new Liquid("hot water + black tea bag", 0.5, 0, 2.10);
+
+        Tea black = new Tea("Black Tea");
+        black.addLiquid(blackTea2);
+
+        System.out.println("Contents of Black Tea:"+ Arrays.toString(black.getLiquidsString()));
+        System.out.printf("%s is Alcoholic: %b%n",black.getName(),black.isAlcoholic());
+        System.out.printf("Alcohol percentage of %s: %.2f%n",black.getName(),black.getAlcoholPercent());
+        System.out.printf("Volume of %s: %.2f%n",black.getName(),black.getVolume());
 
 //------------------------------------------------------------------------------------------------
 
@@ -60,7 +78,46 @@ public class Main {
 //------------------------------adding Stuff to selling data-------------------
         //TODO: add more things (or drinks) to the counter
         Registrierkasse counter = new Registrierkasse();
-        counter.addData(new SellingData(martini,seller1,new SellingDay("1.1.21")));
+        SellingDay silvester = new SellingDay("31.12.20");
+        SellingDay newyear = new SellingDay("1.1.21");
+        counter.addData(new SellingData(martini,seller1,newyear));
+
+        counter.addData(new SellingData(teaRum,seller2,silvester));
+        counter.addData(new SellingData(teaRum,seller2,silvester));
+        counter.addData(new SellingData(teaRum,seller2,silvester));
+        counter.addData(new SellingData(teaRum,seller2,newyear));
+        counter.addData(new SellingData(black,seller2,newyear));
+        counter.addData(new SellingData(black,seller2,newyear));
+        counter.addData(new SellingData(martini,seller2,silvester));
+        counter.addData(new SellingData(martini,seller2,silvester));
+        counter.addData(new SellingData(martini,seller2,silvester));
+        counter.addData(new SellingData(martini,seller2,silvester));
+        counter.addData(new SellingData(martini,seller2,silvester));
+        counter.addData(new SellingData(martini,seller2,silvester));
+        counter.addData(new SellingData(martini,seller2,silvester));
+        counter.addData(new SellingData(martini,seller2,silvester));
+        counter.addData(new SellingData(martini,seller2,silvester));
+        counter.addData(new SellingData(martini,seller2,silvester));
+        counter.addData(new SellingData(martini,seller2,silvester));
+        counter.addData(new SellingData(martini,seller2,silvester));
+        counter.addData(new SellingData(martini,seller2,newyear));
+        counter.addData(new SellingData(martini,seller2,newyear));
+        counter.addData(new SellingData(martini,seller2,newyear));
+        counter.addData(new SellingData(martini,seller2,newyear));
+        counter.addData(new SellingData(martini,seller2,newyear));
+        counter.addData(new SellingData(martini,seller2,newyear));
+
+// ------------------------------print data from Registrierkasse-------------------
+
+        System.out.println("\n------ REGISTRIERKASSE ------");
+        System.out.printf("Sales of all softdrinks: %.2f%n", counter.salesPerDrink()[0]);
+        System.out.printf("Sales of all light alcoholic drinks: %.2f%n", counter.salesPerDrink()[1]);
+        System.out.printf("Sales of all hard alcoholic drinks: %.2f%n", counter.salesPerDrink()[2]);
+        System.out.printf("Sales per day - 31.12.2020: \n", counter.salesPerDay(silvester));
+        System.out.printf("Sales per day - 01.01.2021: \n", counter.salesPerDay(newyear));
+        System.out.printf("Sales per Lukas Becker: \n", counter.salesPerCapita(seller1));
+        System.out.printf("Sales per Andrea Hessler: \n", counter.salesPerCapita(seller2));
+
 
     }
 }

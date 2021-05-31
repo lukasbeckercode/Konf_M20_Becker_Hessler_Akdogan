@@ -42,11 +42,11 @@ public class Registrierkasse implements RegisterInterface{
     public double salesPerDay(SellingDay day) {
         double timePrice = 0.0;
         for(SellingData data : sellingDataList){
-            if(data.getSellingDay() == day){
+            if(data.getSellingDay().equals(day)){
                 timePrice += data.getPrice();
             }
         }
-        return timePrice ;
+        return timePrice ;          //TODO: in main nothing return!!!
     }
     //Calculate sales per selling person
     @Override

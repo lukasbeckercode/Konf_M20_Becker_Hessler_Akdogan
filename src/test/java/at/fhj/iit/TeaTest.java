@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * TeaTest
  * testing my own tea class
  * @author Andrea Hessler
- * Last Change: 25.04.21
+ * Last Change: 31.05.21
  */
 public class TeaTest {
     private Liquid rum;
@@ -17,29 +17,29 @@ public class TeaTest {
     @BeforeEach
     void beforeEach(){
         rum = new Liquid("Rum", 0.125, 43);
-        tea = new Tea("Black Tea with Rum", rum);
+        tea = new Tea("Black Tea with Rum");
     }
     /**
      * proof if the expected output = the actual output --> use assertions
      */
-    @Test
-    @DisplayName("should create alcoholic tea")
-    void shouldCreateAlcTea() {
-        tea.addTea("Black Tea with Rum", rum);
-        assertFalse(tea.getAllTeas().isEmpty());            //proof if list is empty, assert: false
-        assertEquals(1, tea.getAllTeas().size());   //proof if exact one element is in the list, assert : 1 is equal the size of the list
-    }
-    @Test
-    @DisplayName("only create tea when name is not null")
-    void hasName() {
-        assertEquals("Black Tea with Rum", tea.name);
-        assertThrows(RuntimeException.class, () -> {
-            tea.hasName(null);
-        });
-        assertThrows(RuntimeException.class, () -> {
-            tea.addTea(null, rum);
-        });
-    }
+//    @Test
+//    @DisplayName("should create alcoholic tea")
+//    void shouldCreateAlcTea() {
+//        tea.addTea("Black Tea with Rum", rum);
+//        assertFalse(tea.getAllTeas().isEmpty());            //proof if list is empty, assert: false
+//        assertEquals(1, tea.getAllTeas().size());   //proof if exact one element is in the list, assert : 1 is equal the size of the list
+//    }
+//    @Test
+//    @DisplayName("only create tea when name is not null")
+//    void hasName() {
+//        assertEquals("Black Tea with Rum", tea.name);
+//        assertThrows(RuntimeException.class, () -> {
+//            tea.hasName(null);
+//        });
+//        assertThrows(RuntimeException.class, () -> {
+//            tea.addTea(null, rum);
+//        });
+//    }
     /**
      * test the getter methods
      */
@@ -60,7 +60,7 @@ public class TeaTest {
         assertTrue(tea.isAlcoholic());
         assertThrows(RuntimeException.class, () -> {
             Liquid water = new Liquid("Water", 0.5, 0);
-            Tea hotWater = new Tea("hot Water", water);
+            Tea hotWater = new Tea("hot Water");
             hotWater.isAlcoholic();
         });
     }

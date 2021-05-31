@@ -1,7 +1,4 @@
 package at.fhj.iit;
-
-import java.util.Date;
-
 /**
  * One day of selling drinks
  */
@@ -19,5 +16,4 @@ public class SellingDay {
     public void setDayTitle(String dayTitle) {
         this.dayTitle = dayTitle;
     }
-
 }
