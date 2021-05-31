@@ -4,7 +4,7 @@ public class SellingData {
     private Drink drink;
     private Seller seller;
     private SellingDay sellingDay;
-    private double price = 0;
+    private double price = 0.0;
 
     public SellingData(Drink drink, Seller seller, SellingDay sellingDay) {
         this.drink = drink;
@@ -14,7 +14,6 @@ public class SellingData {
     }
 
     private void calcPrice(){
-
         for(Liquid l: drink.getLiquids()){
             price += l.getPrice();
         }
