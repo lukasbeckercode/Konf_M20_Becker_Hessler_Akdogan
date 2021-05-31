@@ -5,14 +5,13 @@ Division of Labour
 
 |Lukas Becker | Andrea Heßler | David Akdogan|
 --- | --- | ---
-|Tests,Selling Data|Implementation of "sales"-methods in Registrierkasse.java |Seller,SellingDay Implementation|
-
-->Bis Sonntag 18:30 fertig, dann mvn site sachen nacher machen! 
+|Tests,Commenting+mvn site|Implementation of "sales"-methods in Registrierkasse.java ||
 
 |Date | Names |Changes|
 --- | --- | ---
 |03.05.|Lukas Becker & Andrea Heßler|corrected Folder structure, improved POM, added first markdown files| 
 |17.05|Lukas Becker & Andrea Heßler|added basic structures for this exercise, drinks now have to consist of at least one Liquid!|
+|31.05|Lukas Becker & Andrea Heßler|implemented SellingDay and Seller|
 
 - Registrierkasse.java: Calculates certain sales using the SellingData.java Class
 - SellingData.java: Datastructure saving the selling Day, Seller and Drink sold for each transaction

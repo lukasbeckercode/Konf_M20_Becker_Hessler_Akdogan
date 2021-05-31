@@ -18,6 +18,12 @@ public class Main {
         System.out.println(d+"\n");
         //allDrinks.add(d);
 
+        //------------------------------Initialize 3 Seller-------------------------------------
+
+        Seller seller1 = new Seller("Lukas",1);
+        Seller seller2 = new Seller("Andrea",2);
+        Seller seller3 = new Seller("David",3);
+
 //-------------Cocktail Implementation----------------------------------------------------------
         Liquid dryGin = new Liquid("Dry Gin",0.060, 40,6.50);
         Liquid vermouth = new Liquid("Vermouth",0.010,16,8.70);
@@ -45,11 +51,16 @@ public class Main {
 
         System.out.println();
         Liquid whiskey = new Liquid("Whiskey", 0.03, 40);
+        whiskey.setPrice(15.50);
         Coffee coffee = new Coffee("Irish Coffee", whiskey);
         System.out.println("------ IRISH COFFEE ------");
         System.out.println("Alcoholic: " + coffee.isAlcoholic());
         System.out.println("Percent: " + coffee.getAlcoholPercent());
         System.out.println("Volume: " + coffee.getVolume());
+//------------------------------adding Stuff to selling data-------------------
+        //TODO: add more things (or drinks) to the counter
+        Registrierkasse counter = new Registrierkasse();
+        counter.addData(new SellingData(martini,seller1,new SellingDay("1.1.21")));
 
     }
 }

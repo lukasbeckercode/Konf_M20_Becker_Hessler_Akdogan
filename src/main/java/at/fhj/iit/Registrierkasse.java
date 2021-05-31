@@ -10,14 +10,13 @@ public class Registrierkasse implements RegisterInterface{
     private Seller seller;
     static List<SellingData> sellingDataList = new ArrayList<>();
 
-    public Registrierkasse(SellingData sellingData) {
-        sellingDataList.add(sellingData);
+    public Registrierkasse() {
     }
     /**
      * Total sales for each category:
-     *  - non alcoholic drinks
-     *  - "light" drinks (alcoholic <= 16%)
-     *  - "hard" drinks (alcoholic > 16%)
+     * non alcoholic drinks
+     * "light" drinks (alcoholic <= 16%)
+     * "hard" drinks (alcoholic > 16%)
      */
     @Override
     public double[] salesPerDrink() {
@@ -37,6 +36,18 @@ public class Registrierkasse implements RegisterInterface{
     @Override
     public double salesPerDay() {
         //TODO: Calculate sales for one day
+        /*
+        SellingDay day1 = 1.1.21 ;
+        int tmp_price = 0;
+        for(SellingData data in sellingDataList){
+            if(data.getDay == day1){
+                tmp_price += data.getPrice();
+            }
+         }
+
+         return tmp_price ;
+
+         */
         return 0;
     }
     @Override
@@ -50,6 +61,11 @@ public class Registrierkasse implements RegisterInterface{
         salesPerDay();
         salesPerCapita();
         return 0;
+    }
+
+
+    public void addData(SellingData data){
+        sellingDataList.add(data);
     }
 
 }
