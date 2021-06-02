@@ -5,10 +5,18 @@ package at.fhj.iit;
 public class SellingDay {
     private String dayTitle;
 
+    /**
+     * Constructor
+     * @param dayTitle one day of sales
+     */
     public SellingDay(String dayTitle) {
         this.dayTitle = dayTitle;
     }
 
+    /**
+     * Getter for the Day title
+     * @return
+     */
     public String getDayTitle() {
         return dayTitle;
     }

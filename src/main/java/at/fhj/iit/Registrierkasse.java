@@ -3,19 +3,25 @@ package at.fhj.iit;
 import java.util.ArrayList;
 import java.util.List;
 
-//TODO: commenting and testing
+/**
+ * Total sales for each category:
+ * non alcoholic drinks
+ * "light" drinks (alcoholic <= 16%)
+ * "hard" drinks (alcoholic > 16%)
+ */
 public class Registrierkasse implements RegisterInterface{
     static List<SellingData> sellingDataList = new ArrayList<>();
 
+    /**
+     * Default Constructor
+     */
     public Registrierkasse() {
     }
+
     /**
-     * Total sales for each category:
-     * non alcoholic drinks
-     * "light" drinks (alcoholic <= 16%)
-     * "hard" drinks (alcoholic > 16%)
+     * Calculate sales per drink, differences in liquids
+     * @return money made from selling all drinks on one day
      */
-    //Calculate sales per drink, differences in liquids
     @Override
     public double[] salesPerDrink() {
         double drinkPriceSoft = 0.0;
@@ -37,7 +43,12 @@ public class Registrierkasse implements RegisterInterface{
         sumDrinkPrice[2] = drinkPriceHard;
         return sumDrinkPrice;
     }
-    //Calculate sales for one day
+
+    /**
+     * Calculates sales per day
+     * @param day the day that is looked at
+     * @return the complete revenue made on that day as a double
+     */
     @Override
     public double salesPerDay(SellingDay day) {
         double timePrice = 0.0;
@@ -48,7 +59,13 @@ public class Registrierkasse implements RegisterInterface{
         }
         return timePrice ;          //TODO: in main nothing return!!!
     }
-    //Calculate sales per selling person
+
+
+    /**
+     * Calculate sales per selling person
+     * @param seller the seller that is looked at
+     * @return the revenue made by one seller over time
+     */
     @Override
     public double salesPerCapita(Seller seller) {
         double capitaPrice = 0.0;
@@ -59,7 +76,13 @@ public class Registrierkasse implements RegisterInterface{
         }
         return capitaPrice;
     }
-    //calculate sales for one day made by one selling person
+
+    /**
+     * calculate sales for one day made by one selling person
+     * @param seller the seller that is looked at
+     * @param day the day that is looked at
+     * @return the revenue made by one seller on one day
+     */
     @Override
     public double salesPerCapitaAndDay(Seller seller, SellingDay day) {
         double capitaDayPrice = 0.0;
@@ -70,6 +93,11 @@ public class Registrierkasse implements RegisterInterface{
         }
         return capitaDayPrice;
     }
+
+    /**
+     * Add something to the dataList
+     * @param data the data to be added
+     */
     public void addData(SellingData data){
         sellingDataList.add(data);
     }

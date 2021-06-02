@@ -108,10 +108,18 @@ public class Liquid {
         this.alcoholPercent = alcoholPercent;
     }
 
+    /**
+     * setter for the price
+     * @param price how much a liquid costs
+     */
     public void setPrice(double price) {
         this.price = price;
     }
 
+    /**
+     * getter for the Price
+     * @return the price of a liquid
+     */
     public double getPrice() {
         return price;
     }

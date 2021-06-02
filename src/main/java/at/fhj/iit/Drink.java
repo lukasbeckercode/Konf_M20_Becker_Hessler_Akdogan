@@ -56,6 +56,10 @@ public abstract class Drink {
         liquids.add(liquid);
     }
 
+    /**
+     * Getter for the Liquid List of each Drink
+     * @return the List of Liquids
+     */
     public List<Liquid> getLiquids() {
         return liquids;
     }
