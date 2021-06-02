@@ -42,7 +42,7 @@ public class Registrierkasse implements RegisterInterface{
     public double salesPerDay(SellingDay day) {
         double timePrice = 0.0;
         for(SellingData data : sellingDataList){
-            if(data.getSellingDay().equals(day)){
+            if(data.getSellingDay().getDayTitle().equals(day.getDayTitle())){
                 timePrice += data.getPrice();
             }
         }
