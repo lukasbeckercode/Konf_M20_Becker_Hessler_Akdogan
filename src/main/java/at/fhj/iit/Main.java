@@ -113,11 +113,14 @@ public class Main {
         System.out.printf("Sales of all softdrinks: %.2f%n", counter.salesPerDrink()[0]);
         System.out.printf("Sales of all light alcoholic drinks: %.2f%n", counter.salesPerDrink()[1]);
         System.out.printf("Sales of all hard alcoholic drinks: %.2f%n", counter.salesPerDrink()[2]);
-        System.out.printf("Sales per day - 31.12.2020: \n", counter.salesPerDay(silvester));
-        System.out.printf("Sales per day - 01.01.2021: \n", counter.salesPerDay(newyear));
-        System.out.printf("Sales per Lukas Becker: \n", counter.salesPerCapita(seller1));
-        System.out.printf("Sales per Andrea Hessler: \n", counter.salesPerCapita(seller2));
-
+        System.out.printf("Sales per day - 31.12.2020: %.2f%n", counter.salesPerDay(silvester));
+        System.out.printf("Sales per day - 01.01.2021: %.2f%n", counter.salesPerDay(newyear));
+        System.out.printf("Sales per Lukas Becker: %.2f%n", counter.salesPerCapita(seller1));
+        System.out.printf("Sales per Andrea Hessler: %.2f%n", counter.salesPerCapita(seller2));
+        System.out.printf("Sales per Lukas Becker and day - 31.12.2020: %.2f%n", counter.salesPerCapitaAndDay(seller1, silvester));
+        System.out.printf("Sales per Andrea Hessler and day - 31.12.2020: %.2f%n", counter.salesPerCapitaAndDay(seller2, silvester));
+        System.out.printf("Sales per Lukas Becker and day - 01.01.2021: %.2f%n", counter.salesPerCapitaAndDay(seller1, newyear));
+        System.out.printf("Sales per Andrea Hessler day - 01.01.2021: %.2f%n", counter.salesPerCapitaAndDay(seller2, newyear));
 
     }
 }
