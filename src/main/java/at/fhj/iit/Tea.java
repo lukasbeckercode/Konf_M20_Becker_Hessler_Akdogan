@@ -3,10 +3,10 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 /**
- * Tea is a special SimpleDrink
+ * Tea is a special Drink
  * Tea with Alcohol is possible (exp. Tea with Rum)
  * @author      Andrea Hessler
- * Last Change: 25.04.2021
+ * Last Change: 02.06.2021
  */
 public class Tea extends Drink{
         /**
