@@ -8,9 +8,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class SellingDataTest {
 
     private SellingData sellingData;
-    Drink testDrink = new Cocktail("test");
-    Seller seller = new Seller("testSeller",1);
-    SellingDay day = new SellingDay("Silvester");
+    private final Drink testDrink = new Cocktail("test");
+    private final Seller seller = new Seller("testSeller",1);
+    private final SellingDay day = new SellingDay("Silvester");
     @BeforeEach
     void setUp(){
         Liquid l1 = new Liquid("Vodka",0.05,45,7);
