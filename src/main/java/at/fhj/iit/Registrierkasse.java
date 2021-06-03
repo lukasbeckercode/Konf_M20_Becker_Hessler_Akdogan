@@ -101,4 +101,8 @@ public class Registrierkasse implements RegisterInterface{
     public void addData(SellingData data){
         sellingDataList.add(data);
     }
+
+    public SellingData getData(int index){
+        return sellingDataList.get(index);
+    }
 }
