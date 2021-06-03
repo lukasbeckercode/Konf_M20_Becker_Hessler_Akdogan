@@ -1,9 +1,9 @@
 package at.fhj.iit;
 //TODO: Comment and test, more implementation
 public class SellingData {
-    private Drink drink;
-    private Seller seller;
-    private SellingDay sellingDay;
+    private final Drink drink;
+    private final Seller seller;
+    private final SellingDay sellingDay;
     private double price = 0.0;
 
     /**

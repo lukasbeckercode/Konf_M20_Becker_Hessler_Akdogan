@@ -3,7 +3,7 @@ package at.fhj.iit;
  * One day of selling drinks
  */
 public class SellingDay {
-    private String dayTitle;
+    private final String dayTitle;
 
     /**
      * Constructor
@@ -15,13 +15,10 @@ public class SellingDay {
 
     /**
      * Getter for the Day title
-     * @return
+     * @return the title of a Day
      */
     public String getDayTitle() {
         return dayTitle;
     }
 
-    public void setDayTitle(String dayTitle) {
-        this.dayTitle = dayTitle;
-    }
 }

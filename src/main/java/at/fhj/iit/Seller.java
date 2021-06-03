@@ -22,15 +22,6 @@ public class Seller {
         this.name = name;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-
     /**
      * Constructor
      * @param name Seller name
@@ -40,5 +31,7 @@ public class Seller {
         this.name = name;
         this.id = id;
     }
+
+    public Seller(){}
 }
 
