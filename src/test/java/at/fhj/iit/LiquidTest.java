@@ -70,4 +70,11 @@ class LiquidTest {
         assertEquals(4.5,liquidPriced.getPrice());
         assertEquals(0.0,liquid.getPrice());
     }
+
+    @Test
+    @DisplayName("Price Setter Test")
+    void setPriceTest(){
+        liquid.setPrice(5);
+        assertEquals(5,liquid.getPrice());
+    }
 }
