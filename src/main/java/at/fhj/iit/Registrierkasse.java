@@ -24,7 +24,7 @@ public class Registrierkasse implements RegisterInterface {
      * @return money made from selling all drinks on one day
      */
     @Override
-    public double[] salesPerDrink() {
+    public double[] salesPerDrink()  {
         double drinkPriceSoft = 0.0;
         double drinkPriceLight = 0.0;
         double drinkPriceHard = 0.0;
@@ -33,10 +33,13 @@ public class Registrierkasse implements RegisterInterface {
             drink = data.getDrink();
             //difference in AlcoholPercent of drink
             double alc = drink.getAlcoholPercent();
-            if (alc == 0) drinkPriceSoft += data.getPrice();
-            else if (alc <= 16) drinkPriceLight += data.getPrice();
-            else if (alc > 16) drinkPriceHard += data.getPrice();
-            else System.out.println("Error - Alc < 0%");
+            if (alc == 0){
+                drinkPriceSoft += data.getPrice();
+            } else if (alc <= 16){
+                drinkPriceLight += data.getPrice();
+            } else if (alc > 16){
+                drinkPriceHard += data.getPrice();
+            }
         }
         double[] sumDrinkPrice = new double[3];
         sumDrinkPrice[0] = drinkPriceSoft;

@@ -24,9 +24,19 @@ class RegistrierkasseTest {
     }
     @Test
     void salesPerDrink() {
-        assertEquals(8.5,counter.salesPerDrink()[2]);
-        assertEquals(0,counter.salesPerDrink()[1]);
-        assertEquals(0,counter.salesPerDrink()[0]);
+        double hardAlc = 0, lightAlc = 0, nonAlc = 0;
+
+
+            hardAlc = counter.salesPerDrink()[2];
+            testDrink.getLiquids().get(0).setAlcoholPercent(15);
+            lightAlc = counter.salesPerDrink()[1];
+
+            testDrink.getLiquids().get(0).setAlcoholPercent(0);
+            nonAlc = counter.salesPerDrink()[0];
+
+        assertEquals(8.5,hardAlc);
+        assertEquals(8.5,lightAlc);
+        assertEquals(8.5,nonAlc);
     }
 
     @Test
