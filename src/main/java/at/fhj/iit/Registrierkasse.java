@@ -62,7 +62,7 @@ public class Registrierkasse implements RegisterInterface {
                 timePrice += data.getPrice();
             }
         }
-        return timePrice;          //TODO: in main nothing return!!!
+        return timePrice;
     }
 
 
@@ -110,10 +110,18 @@ public class Registrierkasse implements RegisterInterface {
         sellingDataList.add(data);
     }
 
+    /**
+     * Clears the data of the List
+      */
     public void clearData() {
         sellingDataList.clear();
     }
 
+    /**
+     * returns a certain item from the sellingDataList
+     * @param index index of the item in the list that should be returned
+     * @return the item at the given index
+     */
     public SellingData getData(int index) {
         return sellingDataList.get(index);
     }

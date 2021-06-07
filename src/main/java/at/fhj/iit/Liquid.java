@@ -38,6 +38,13 @@ public class Liquid {
         this.alcoholPercent = alcoholPercent;
     }
 
+    /**
+     * Creates a new liquid with a name, volume, alcohol percentage and a price
+     * @param name name of the Liquid
+     * @param volume volume of the Liquid
+     * @param alcoholPercent alcohol percentage of liquid
+     * @param price price of the Liquid
+     */
     public Liquid(String name, double volume, double alcoholPercent,double price) {
         this.name = name;
         checkVolume(volume);
@@ -47,6 +54,10 @@ public class Liquid {
         this.price = price;
     }
 
+    /**
+     * checks the Volume of a liquid
+     * @param volume the volume a user is trying to enter
+     */
     private void checkVolume(double volume) {
         if (volume <= 0) {
             throw new IllegalArgumentException("liquid " + name + " must have a volume > 0");

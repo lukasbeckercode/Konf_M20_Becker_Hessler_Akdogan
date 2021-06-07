@@ -64,6 +64,9 @@ public abstract class Drink {
         return liquids;
     }
 
+    /**
+     * Clears the liquid list
+     */
     public void clearList(){
         liquids.clear();
     }

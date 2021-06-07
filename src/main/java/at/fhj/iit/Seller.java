@@ -5,7 +5,7 @@ package at.fhj.iit;
  */
 public class Seller {
     private String name;
-    private int id ;
+    private int id ; //might be useful later, so I'm leaving this here
 
     /**
      * @return the name of the Seller
@@ -32,6 +32,9 @@ public class Seller {
         this.id = id;
     }
 
+    /**
+     * default constructor
+     */
     public Seller(){}
 }
 

@@ -1,5 +1,8 @@
 package at.fhj.iit;
-//TODO: Comment and test, more implementation
+
+/**
+ * Stores all the data the registrierkassa needs
+ */
 public class SellingData {
     private final Drink drink;
     private final Seller seller;

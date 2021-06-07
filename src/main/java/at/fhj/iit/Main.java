@@ -76,7 +76,6 @@ public class Main {
         System.out.println("Percent: " + coffee.getAlcoholPercent());
         System.out.println("Volume: " + coffee.getVolume());
 //------------------------------adding Stuff to selling data-------------------
-        //TODO: add more things (or drinks) to the counter
         Registrierkasse counter = new Registrierkasse();
         SellingDay silvester = new SellingDay("31.12.20");
         SellingDay newyear = new SellingDay("1.1.21");
