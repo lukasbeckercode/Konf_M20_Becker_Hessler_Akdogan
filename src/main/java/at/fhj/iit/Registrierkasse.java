@@ -6,8 +6,8 @@ import java.util.List;
 /**
  * Total sales for each category:
  * non alcoholic drinks
- * "light" drinks (alcoholic <= 16%)
- * "hard" drinks (alcoholic > 16%)
+ * "light" drinks (alcohol percentage smaller then or equal to 16%)
+ * "hard" drinks (alcohol percentage greater then 16%)
  */
 public class Registrierkasse implements RegisterInterface {
     static List<SellingData> sellingDataList = new ArrayList<>();
