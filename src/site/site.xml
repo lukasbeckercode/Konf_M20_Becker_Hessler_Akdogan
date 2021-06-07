@@ -11,7 +11,7 @@
             <item name="Test Coverage Explanation" href="testCoverageComment.html" />
         </menu>
         <menu name="Design Decisions and Code Explanation">
-            <item name="Design Decisions" href="designDecision.html"/>
+            <item name="Design Decisions" href="designDecisions.html"/>
             <item name="Code Explanation" href="codeExplanation.html"/>
             <item name="Readme" href="README.html"/>
         </menu>
