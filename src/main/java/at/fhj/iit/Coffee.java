@@ -5,6 +5,7 @@ package at.fhj.iit;
  * @see Drink
  * @author David Akdogan
  * last change: 24.04.2021
+ * @deprecated 
  */
 
 public class Coffee extends Drink {

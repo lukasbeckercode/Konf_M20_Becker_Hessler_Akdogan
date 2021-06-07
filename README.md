@@ -1,5 +1,7 @@
 # Software Configuration Management 
-Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan
+Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan <br/>
+Since Exercise 3 David Akdogan left our Team, because he has to repeat the first semester.
+
 ## Exercise 3
 Division of Labour
 
@@ -12,6 +14,9 @@ Division of Labour
 |03.05.|Lukas Becker & Andrea Heßler|corrected Folder structure, improved POM, added first markdown files| 
 |17.05|Lukas Becker & Andrea Heßler|added basic structures for this exercise, drinks now have to consist of at least one Liquid!|
 |31.05|Lukas Becker & Andrea Heßler|implemented SellingDay and Seller|
+|02.06.|Lukas Becker & Andrea Heßler|implemented Registrierkasse, Tea & TeaTest, Main, added comments, writed designDecisions and codeExplanation|
+|03.06.|Lukas Becker| implemented all testcases|
+|07.06.|Lukas Becker & Andrea Heßler| Preparation maven site, completed Readme
 
 - Registrierkasse.java: Calculates certain sales using the SellingData.java Class
 - SellingData.java: Datastructure saving the selling Day, Seller and Drink sold for each transaction
