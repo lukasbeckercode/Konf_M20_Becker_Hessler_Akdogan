@@ -38,7 +38,7 @@ Since Exercise 3 David Akdogan left our Team, because he has to repeat the first
 | Coffee | 100% |
 | Tea | 100% 
 
-![Test Coverage of Project](/src/site/resources/Coverage.png) 
+![Test Coverage of Project](Coverage.png) 
 ## Drinks Sample/Exercise 1 ##
 ### Becker Lukas: Add Cocktail.java with first implementation 
 - A Drink consisting of various Liquids
