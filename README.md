@@ -3,7 +3,7 @@ Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan <br/>
 Since Exercise 3 David Akdogan left our Team, because he has to repeat the first semester.
 
 ## Exercise 3
-![Link to Documentation](https://lukasbeckercode.github.io/exercise3Doc/)
+[Link to Documentation](https://lukasbeckercode.github.io/exercise3Doc/)
 ### Division of Labour
 
 |Lukas Becker | Andrea Heßler | David Akdogan|
