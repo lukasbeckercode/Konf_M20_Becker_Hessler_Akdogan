@@ -1,5 +1,6 @@
 package at.fhj.iit;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -52,4 +53,10 @@ class RegistrierkasseTest {
         counter.addData(dummy);
         assertEquals(dummy,counter.getData(1));
     }
+    @AfterEach
+    void tearDown(){
+        testDrink.clearList();
+        counter.clearData();
+    }
+
 }
