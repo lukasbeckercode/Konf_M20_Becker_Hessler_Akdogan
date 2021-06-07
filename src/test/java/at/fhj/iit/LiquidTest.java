@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Testcases for the Liquid Clas
+ * Testcases for the Liquid Class
  * @see Liquid
  * @author Lukas Becker
  * last change: 24.04.2021
