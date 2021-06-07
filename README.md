@@ -3,13 +3,13 @@ Gruppe D: Lukas Becker, Andrea Heßler, David Akdogan <br/>
 Since Exercise 3 David Akdogan left our Team, because he has to repeat the first semester.
 
 ## Exercise 3
-###Division of Labour
+### Division of Labour
 
 |Lukas Becker | Andrea Heßler | David Akdogan|
 --- | --- | ---
 |Tests,Commenting+mvn site|Implementation of "sales"-methods in Registrierkasse.java ||
 
-###Commits and Changes
+### Commits and Changes
 |Date | Names |Changes|
 --- | --- | ---
 |03.05.|Lukas Becker & Andrea Heßler|corrected Folder structure, improved POM, added first markdown files| 
