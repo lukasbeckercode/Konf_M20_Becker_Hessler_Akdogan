@@ -8,6 +8,7 @@
         <menu name="JavaDoc and Test Coverage">
             <item name="JavaDoc" href="apidocs/index.html"/>
             <item name="Test Coverage" href="jacoco/index.html" />
+            <item name="Test Coverage Explanation" href="testCoverageComment.html" />
         </menu>
         <menu name="Design Decisions and Code Explanation">
             <item name="Design Decisions" href="designDecision.html"/>
