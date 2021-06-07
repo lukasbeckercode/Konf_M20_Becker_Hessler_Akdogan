@@ -7,4 +7,4 @@ believe it is tested sufficiently <br />
 All the other Classes have a Coverage of 100%. <br />
 
 
-![Test Coverage of Project accordign to IntelliJ](../resources/CoverageFinal.png) 
+![Test Coverage of Project according to IntelliJ](../resources/CoverageFinal.png) 
