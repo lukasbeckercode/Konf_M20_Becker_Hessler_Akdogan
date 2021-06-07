@@ -32,7 +32,7 @@ Division of Labour
 | Coffee | 100% |
 | Tea | 100% 
 
-![Test Coverage of Project](Coverage.png) 
+![Test Coverage of Project](../resources/Coverage.png) 
 ## Drinks Sample/Exercise 1 ##
 ### Becker Lukas: Add Cocktail.java with first implementation 
 - A Drink consisting of various Liquids
